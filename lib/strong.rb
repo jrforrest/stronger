@@ -1,0 +1,7 @@
+require 'strong/interface'
+require 'strong/type_checking'
+require 'strong/hash'
+require 'strong/array'
+require 'strong/property'
+require 'strong/property_set'
+require 'strong/property_definition'
