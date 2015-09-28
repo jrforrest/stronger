@@ -27,7 +27,7 @@ module Stronger
         "Can not concatenate a typed array with a typed array "\
         "with an incompatible type"
       refute_ex_raised TypeError,
-        ->{ TypedArray.new(Numeric).concat(Array.new(Fixnum)) },
+        ->{ TypedArray.new(Numeric).concat(TypedArray.new(Fixnum)) },
         "A typed array may be concatenated with another typed array which has "\
         "a type that implements its own type."
     end
