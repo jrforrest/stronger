@@ -1,4 +1,4 @@
-require 'strong/collection'
+require 'stronger/collection'
 module Stronger
   class TypedHash < ::Hash
     include Collection

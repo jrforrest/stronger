@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'strong'
+require 'stronger'
 require 'pry'
 
 # Test Helpers

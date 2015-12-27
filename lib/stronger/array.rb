@@ -1,8 +1,8 @@
-require 'strong/collection'
+require 'stronger/collection'
 module Stronger
   class TypedArray < ::Array
     include Collection
-    [:push,  :shift, :[]=].each do |name|
+    [:push,  :shift, :[]=, :<<].each do |name|
       define_method(name) do |value|
         check_value_type!(value)
         super(value)
