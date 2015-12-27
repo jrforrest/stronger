@@ -16,6 +16,8 @@ module Stronger
       assert_ex_raised TypeError, ->{array.push(Object.new)},
         "Types not implementing the array's type will raise a TypeError "\
         "when pushed."
+      assert_ex_raised TypeError, -> {array << Object.new},
+        "Type checking works on << alias for array"
     end
 
     def test_concat
