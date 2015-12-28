@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/jrforrest/stronger'
   s.summary = 'Run-time type checking utils'
   s.description = 'Provides several utilities for run-time type-checking with Ruby'
-  s.license = 'WTFPL'
+  s.license = 'MIT'
 
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files test`.split("\n")
